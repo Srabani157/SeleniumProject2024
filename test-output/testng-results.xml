@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-03T14:36:22 IST" name="Default Suite" finished-at="2024-10-03T14:36:33 IST" duration-ms="11427">
+    <groups>
+    </groups>
+    <test started-at="2024-10-03T14:36:22 IST" name="SeleniumProject" finished-at="2024-10-03T14:36:33 IST" duration-ms="11427">
+      <class name="com.inetbanking.testcases.LoginPageTest">
+        <test-method is-config="true" signature="Initilization()[pri:0, instance:com.inetbanking.testcases.LoginPageTest@71def8f8]" started-at="2024-10-03T14:36:22 IST" name="Initilization" finished-at="2024-10-03T14:36:28 IST" duration-ms="6825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initilization -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.inetbanking.testcases.LoginPageTest@71def8f8]" started-at="2024-10-03T14:36:28 IST" name="SetUp" finished-at="2024-10-03T14:36:32 IST" depends-on-methods="base.BaseTest.Initilization" duration-ms="3493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="validateTitle()[pri:1, instance:com.inetbanking.testcases.LoginPageTest@71def8f8]" started-at="2024-10-03T14:36:32 IST" name="validateTitle" finished-at="2024-10-03T14:36:32 IST" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method signature="loginTest()[pri:2, instance:com.inetbanking.testcases.LoginPageTest@71def8f8]" started-at="2024-10-03T14:36:32 IST" name="loginTest" finished-at="2024-10-03T14:36:33 IST" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.inetbanking.testcases.LoginPageTest@71def8f8]" started-at="2024-10-03T14:36:33 IST" name="TearDown" finished-at="2024-10-03T14:36:33 IST" duration-ms="23" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : User is not valid}
+  (Session info: chrome=129.0.6668.59): User is not valid
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf0c74be1a4df83058de232e68f376c7, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\sraba\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56543/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf0c74be1a4df83058de232e68f376c7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User is not valid}
+  (Session info: chrome=129.0.6668.59): User is not valid
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf0c74be1a4df83058de232e68f376c7, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\sraba\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56543/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf0c74be1a4df83058de232e68f376c7
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:406)
+at base.BaseTest.TearDown(BaseTest.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
+at org.testng.TestRunner.afterRun(TestRunner.java:914)
+at org.testng.TestRunner.run(TestRunner.java:605)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.inetbanking.testcases.LoginPageTest -->
+    </test> <!-- SeleniumProject -->
+  </suite> <!-- Default Suite -->
+</testng-results>
