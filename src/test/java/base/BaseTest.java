@@ -41,6 +41,7 @@ public class BaseTest {
             logger.info("URL is Opened");
         }
         driver.manage().window().maximize();
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 
